@@ -1,5 +1,7 @@
 package com.think4once.mrhopp;
 
+import com.think4once.mrhopp.block.ModBlocks;
+import com.think4once.mrhopp.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,5 +22,7 @@ public class MrHopp implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
