@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mrhopp",
+	"version": "${version}",
+	"name": "mrhopp",
+	"description": "Mr. Hopp's Playhouse; credit to Moonbit.",
+	"authors": [
+		"think4once"
+	],
+	"contact": {
+		"homepage": "http://think4once.rf.gd",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mrhopp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.think4once.mrhopp.MrHopp"
+		],
+		"fabric-datagen": [
+			"com.think4once.mrhopp.MrHoppDataGenerator"
+		],
+		"client": [
+			"com.think4once.mrhopp.MrHoppClient"
+		]
+	},
+	"mixins": [
+		"mrhopp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
